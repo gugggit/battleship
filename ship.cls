@@ -38,6 +38,8 @@ CLASS games.bsgit.ship:
     
   define private property gun as dec no-undo get. private set.
 
+  define private property ammo as int no-undo get. private set.
+
   DEFINE PUBLIC PROPERTY hits AS integer NO-UNDO 
     GET.
     SET. 
@@ -58,6 +60,12 @@ do:
 /*  message "inside misetorient" view-as alert-box.*/
   this-object:changeOrientation().
 end.
+
+CONSTRUCTOR PUBLIC reload (input iplength as int, input ipname as char, input ibuttongrid as buttongrid, input ipbgcolor as int):
+    def var i as int.
+    def var j as int.
+
+    end.
 
   CONSTRUCTOR PUBLIC ship (input iplength as int, input ipname as char, input ibuttongrid as buttongrid, input ipbgcolor as int):
     def var i as int.
