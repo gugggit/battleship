@@ -59,6 +59,17 @@ do:
   this-object:changeOrientation().
 end.
 
+	/*------------------------------------------------------------------------------
+	 Purpose:
+	 Notes:
+	------------------------------------------------------------------------------*/
+		
+	CONSTRUCTOR PROTECTED ship (  ):
+		SUPER ().
+		
+	END CONSTRUCTOR.
+
+
   CONSTRUCTOR PUBLIC ship (input iplength as int, input ipname as char, input ibuttongrid as buttongrid, input ipbgcolor as int):
     def var i as int.
     def var j as int.
