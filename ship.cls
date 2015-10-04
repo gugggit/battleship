@@ -35,6 +35,8 @@ CLASS games.bsgit.ship:
   DEFINE PUBLIC PROPERTY whship AS WIDGET-HANDLE NO-UNDO 
     GET.
     private set.
+    
+  define public property gun as char no-undo get. private set.
 
   DEFINE PUBLIC PROPERTY hits AS integer NO-UNDO 
     GET.
