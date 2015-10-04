@@ -35,6 +35,10 @@ CLASS games.bsgit.ship:
   DEFINE PUBLIC PROPERTY whship AS WIDGET-HANDLE NO-UNDO 
     GET.
     private set.
+    
+  define private property gun as dec no-undo get. private set.
+
+  define private property ammo as int no-undo get. private set.
 
   DEFINE PUBLIC PROPERTY hits AS integer NO-UNDO 
     GET.
@@ -56,6 +60,23 @@ do:
 /*  message "inside misetorient" view-as alert-box.*/
   this-object:changeOrientation().
 end.
+
+
+	/*------------------------------------------------------------------------------
+	 Purpose:
+	 Notes:
+	------------------------------------------------------------------------------*/
+		
+	CONSTRUCTOR PROTECTED ship (  ):
+		SUPER ().
+		
+	END CONSTRUCTOR.
+
+CONSTRUCTOR Private ship ( input ipname as char, input ibuttongrid as buttongrid, input ipbgcolor as int):
+    def var i as int.
+    def var j as int.
+
+    end.
 
   CONSTRUCTOR PUBLIC ship (input iplength as int, input ipname as char, input ibuttongrid as buttongrid, input ipbgcolor as int):
     def var i as int.
