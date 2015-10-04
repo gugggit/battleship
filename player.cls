@@ -10,11 +10,11 @@
  ----------------------------------------------------------------------*/
 
 USING Progress.Lang.*.
-using games.lab1.*.
+using games.bsgit.*.
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-CLASS games.lab1.player: 
+CLASS games.bsgit.player: 
 
   def    public property      theumpire      as umpire
     get.
@@ -58,7 +58,7 @@ CLASS games.lab1.player:
       theumpire    = ipumpire.
 
     create window shipwin assign
-      title = playername + " Ship Window - Player " + string(playernumber) + " Lab1"
+      title = playername + " Ship Window - Player " + string(playernumber) + " BSGit"
       row = 3
       column = 1 + (playernumber - 1) * spacer * 2
       width = 200

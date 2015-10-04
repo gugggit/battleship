@@ -10,11 +10,11 @@
  ----------------------------------------------------------------------*/
 
 USING Progress.Lang.*.
-using games.lab1.*. 
+using games.bsgit.*. 
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-CLASS games.lab1.umpire: 
+CLASS games.bsgit.umpire: 
   def var oplayer1     as player.
   def var oplayer2     as player.
   def var oattackgrid1 as buttongrid.

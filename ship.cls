@@ -10,11 +10,11 @@
  ----------------------------------------------------------------------*/
 
 USING Progress.Lang.*.
-using games.lab1.*.
+using games.bsgit.*.
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-CLASS games.lab1.ship: 
+CLASS games.bsgit.ship: 
 
 	DEFINE PUBLIC PROPERTY orientation AS CHARACTER NO-UNDO 
 	GET.
@@ -79,7 +79,7 @@ end.
     end. 
 /*    message vertshipname view-as alert-box.*/
 /*      message "b4 shipproc in ship.cls" view-as alert-box.*/
-    run games/lab1/shipproc.p  persistent set hproc (input ibuttongrid).
+    run games/bsgit/shipproc.p  persistent set hproc (input ibuttongrid).
     create widget-pool "ships" persistent no-error.
     create editor htxt in widget-pool "ships"
       assign 

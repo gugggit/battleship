@@ -10,11 +10,11 @@
  ----------------------------------------------------------------------*/
 
 USING Progress.Lang.*.
-using games.lab1.*.
+using games.bsgit.*.
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-CLASS games.lab1.buttongrid:
+CLASS games.bsgit.buttongrid:
   
   def    var      hbut      as widget-handle.
   def    var      hrec      as widget-handle.
@@ -225,7 +225,7 @@ CLASS games.lab1.buttongrid:
 	METHOD PUBLIC VOID buildgrid(input iptitle as char  ):
 		
     create widget-pool "buttons" persistent no-error.
-    run games/lab1/gridproc.p persistent set hproc (input frame f1:handle).
+    run games/bsgit/gridproc.p persistent set hproc (input frame f1:handle).
 
     frame f1:movable = no. /* don't need movable */
     frame f1:TITLE   = iptitle.
