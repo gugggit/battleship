@@ -36,7 +36,7 @@ CLASS games.bsgit.ship:
     GET.
     private set.
     
-  define public property gun as char no-undo get. private set.
+  define public property gun as dec no-undo get. private set.
 
   DEFINE PUBLIC PROPERTY hits AS integer NO-UNDO 
     GET.
